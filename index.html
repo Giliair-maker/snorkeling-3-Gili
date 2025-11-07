@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gili Ocean - Premium Snorkeling Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-logo">
+      <i class="bi bi-tsunami"></i>
+      <h1>Gili Ocean</h1>
+    </div>
+    <div class="loading-animation">
+      <div class="loading-bubble"></div>
+      <div class="loading-bubble"></div>
+      <div class="loading-bubble"></div>
+    </div>
+    <div class="loading-percentage" id="loadingPercentage">0%</div>
+    <div class="loading-progress">
+      <div class="loading-progress-bar" id="loadingProgressBar"></div>
+    </div>
+    <div class="loading-text">Preparing your underwater adventure...</div>
+  </div>
+
+  <!-- Header Section -->
+  <section id="Home" class="header">
+    <!-- Video Background -->
+    <video class="video-background" autoplay muted loop playsinline id="bgVideo">
+      <source src="videos/main-bg.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <!-- Header Overlay -->
+    <div class="header-overlay"></div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+      <div class="floating-element fish-1">
+        <i class="fa-solid fa-fish-fins" style="font-size: 5rem; color: rgba(255,255,255,0.7);"></i>
+      </div>
+      <div class="floating-element fish-2">
+        <i class="fa-solid fa-fish" style="font-size: 4rem; color: rgba(255,255,255,0.5);"></i>
+      </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="link-card" id="mainNav">
+      <div class="logo-title">
+        <h2><i class="bi bi-tsunami"></i> Gili Ocean</h2>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <ul>
+        <a href="#Home" class="link-dekstop"><i class="bi bi-house"></i> Home</a>
+        <a href="#package" class="link-dekstop"><i class="bi bi-calendar-check"></i> Packages</a>
+        <a href="#photo-gallery" class="link-dekstop"><i class="bi bi-images"></i> Photo Gallery</a>
+        <a href="#Location" class="link-dekstop"><i class="bi bi-geo-alt"></i> Location</a>
+        <a href="#Faq" class="link-dekstop"><i class="bi bi-question-circle"></i> FAQ</a>
+      </ul>
+      
+      <!-- Hamburger Icon -->
+      <button class="hamburger" id="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#Home"><i class="bi bi-house"></i> Home</a>
+      <a href="#package"><i class="bi bi-calendar-check"></i> Packages</a>
+      <a href="#photo-gallery"><i class="bi bi-images"></i> Photo Gallery</a>
+      <a href="#Location"><i class="bi bi-geo-alt"></i> Location</a>
+      <a href="#Faq"><i class="bi bi-question-circle"></i> FAQ</a>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Header Content -->
+    <div class="header-content">
+      <h1 class="main-title">Discover Underwater Paradise</h1>
+      <p class="subtitle">Immerse yourself in the vibrant marine life of Gili Islands with our premium snorkeling experiences</p>
+      <div class="header-buttons">
+        <a href="#Book-Now" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Now</a>
+        <a href="#package" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> View Packages</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Stats Section -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">5,000+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Snorkeling Spots</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Packages Section -->
+  <section id="package" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Premium Snorkeling Packages</h2>
+      <p class="section-subtitle">Choose the perfect adventure for your underwater exploration</p>
+      
+      <div class="packages-grid">
+        <div class="package-card">
+          <div class="package-header">
+            <h3>Basic Package</h3>
+            <div class="price">$60<span>/person</span></div>
+          </div>
+          <div class="package-content">
+            <div class="package-features">
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Public boat</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>3-hour snorkeling tour</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Professional guide</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Snorkeling equipment</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Life jacket</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-times"></i>
+                <span>Underwater photography</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-times"></i>
+                <span>Lunch included</span>
+              </div>
+            </div>
+            <button class="btn-package" data-package="Basic Package - $45/person">Select Package</button>
+          </div>
+        </div>
+        
+        <div class="package-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="package-header">
+            <h3>Premium Package</h3>
+            <div class="price">$100<span>/person</span></div>
+          </div>
+          <div class="package-content">
+            <div class="package-features">
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Private boat</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>5-hour snorkeling tour</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Professional guide</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Premium snorkeling equipment</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Life jacket</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Underwater photography</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Lunch included</span>
+              </div>
+            </div>
+            <button class="btn-package" data-package="Premium Package - $75/person">Select Package</button>
+          </div>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3>Private Tour</h3>
+            <div class="price">$200<span>/person</span></div>
+          </div>
+          <div class="package-content">
+            <div class="package-features">
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Private boat</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Full day private tour</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Personal guide</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Premium equipment</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Professional underwater photos</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Gourmet lunch & drinks</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Hotel pickup & drop-off</span>
+              </div>
+            </div>
+            <button class="btn-package" data-package="Private Tour - $120/person">Select Package</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">Don't just take our word for it - hear from our amazing customers</p>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <p class="testimonial-text">"The most incredible snorkeling experience of my life! Saw turtles, colorful fish, and the coral was breathtaking. The guides were knowledgeable and made us feel safe throughout."</p>
+          <div class="testimonial-author">- Sarah M.</div>
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <p class="testimonial-text">"Professional guides and top-notch equipment. Felt safe the entire time and the underwater photos are amazing! Will definitely recommend to friends and family."</p>
+          <div class="testimonial-author">- James T.</div>
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <p class="testimonial-text">"Perfect for families! Our kids had an unforgettable experience and the guides were so patient with them. The premium package was worth every penny for the photos alone!"</p>
+          <div class="testimonial-author">- The Wilson Family</div>
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Photo Gallery Section -->
+  <section id="photo-gallery" class="section photo-gallery-section">
+    <div class="container">
+      <h2 class="section-title">Underwater Photo Gallery</h2>
+      <p class="section-subtitle">Experience the magic of Gili's underwater world through our photos</p>
+      
+      <div class="photo-gallery-container">
+        <!-- Main Photo Display -->
+        <div class="photo-main">
+          <img class="main-photo-display" id="mainPhoto" src="images/kurakura.jpg" alt="Underwater coral reef">
+        </div>
+        
+        <!-- Photo Grid -->
+        <div class="photo-grid" id="photoGrid">
+          <!-- Photo 1 -->
+          <div class="photo-item active" data-photo="images/patung.jpg">
+            <div class="photo-thumbnail">
+              <img src="images/patung.jpg" alt="statue">
+              <div class="photo-overlay">
+                <h3>statue under the sea</h3>
+                <p>underwater biodiversity in the coral and turtle statues of Gili Meno.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Photo 2 -->
+          <div class="photo-item" data-photo="images/ikan.jpg">
+            <div class="photo-thumbnail">
+              <img src="images/ikan.jpg" alt="Tropical Fish">
+              <div class="photo-overlay">
+                <h3>Tropical Fish Paradise</h3>
+                <p>Swim among thousands of colorful tropical fish in this breathtaking underwater spectacle.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Photo 3 -->
+          <div class="photo-item" data-photo="images/penyu.jpg">
+            <div class="photo-thumbnail">
+              <img src="images/penyu.jpg" alt="Sea Turtle Encounter">
+              <div class="photo-overlay">
+                <h3>Sea Turtle Encounter</h3>
+                <p>Meet the majestic sea turtles of Gili Islands in their natural habitat. A truly magical experience.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Photo 4 -->
+          <div class="photo-item" data-photo="images/karang2.jpg">
+            <div class="photo-thumbnail">
+              <img src="images/karang2.jpg" alt="coral">
+              <div class="photo-overlay">
+                <h3>colorful coral</h3>
+                <p>see the beauty of colorful coral under the sea.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Photo 5 -->
+          <div class="photo-item" data-photo="images/patung2.jpg">
+            <div class="photo-thumbnail">
+              <img src="images/patung2.jpg" alt="statue">
+              <div class="photo-overlay">
+                <h3>statue under the sea</h3>
+                <p>underwater biodiversity in the coral and turtle statues of Gili Meno.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Photo 6 -->
+          <div class="photo-item" data-photo="images/penyu2.jpg">
+            <div class="photo-thumbnail">
+              <img src="images/penyu2.jpg" alt="turtle">
+              <div class="photo-overlay">
+                <h3>Snorkeling Adventure</h3>
+                <p>Join our guided tours to discover the hidden gems of Gili's underwater world.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Location Section -->
+  <section id="Location" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Our Location</h2>
+      <p class="section-subtitle">Find us in the heart of Gili Islands</p>
+      
+      <div class="location-content">
+        <div class="location-info">
+          <h3>Gili Ocean Snorkeling Center</h3>
+          <div class="location-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Gili Air, North Lombok, West Nusa Tenggara, Indonesia</span>
+          </div>
+          <div class="location-detail">
+            <i class="fas fa-clock"></i>
+            <span>Open daily: 7:00 AM - 7:00 PM</span>
+          </div>
+          <div class="location-detail">
+            <i class="fas fa-phone"></i>
+            <span>+62 812-3456-7890</span>
+          </div>
+          <div class="location-detail">
+            <i class="fas fa-envelope"></i>
+            <span>info@giliocean.com</span>
+          </div>
+          
+          <div class="location-detail">
+            <i class="fas fa-external-link-alt"></i>
+            <span>
+              <a href="https://maps.app.goo.gl/cn8cqtDFrYhppqtw9" target="_blank" class="location-link">
+                Click here for our location
+              </a>
+            </span>
+          </div>
+          
+          <div class="location-features">
+            <div class="feature-box">
+              <i class="fas fa-ship"></i>
+              <span>Boat Departure Point</span>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-utensils"></i>
+              <span>Restaurant Nearby</span>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-parking"></i>
+              <span>Parking Available</span>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-shower"></i>
+              <span>Shower Facilities</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="location-map">
+          <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Interactive Map</h3>
+            <p>Google Maps integration would go here</p>
+            <a href="https://maps.app.goo.gl/cn8cqtDFrYhppqtw9" target="_blank" class="location-link" style="margin-top: 20px; color: white;">
+              Click here for our location
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section id="Faq" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know before your snorkeling adventure</p>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do I need to know how to swim to snorkel?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>While basic swimming skills are recommended, we provide life jackets for all participants and have guides who can assist non-swimmers. Our shallow snorkeling spots are perfect for beginners, and our experienced guides will ensure your safety throughout the experience.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What should I bring for the snorkeling trip?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We recommend bringing sunscreen, a towel, a change of clothes, and a waterproof camera if you have one. We provide all snorkeling equipment including masks, snorkels, and fins. Don't forget your sense of adventure!</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Is snorkeling safe for children?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! We have special equipment for children and family-friendly snorkeling spots. Children under 12 must be accompanied by an adult, and we offer discounted rates for kids. Our guides are trained to work with families and ensure everyone has a safe and enjoyable experience.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is the best time of year for snorkeling in Gili Islands?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>The Gili Islands offer excellent snorkeling conditions year-round. However, the dry season from April to October typically provides the best visibility and calmest waters. During the wet season, visibility can still be good, and there are often fewer tourists.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can I cancel or reschedule my booking?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, you can cancel or reschedule your booking up to 24 hours before your scheduled tour for a full refund. For cancellations within 24 hours, we offer a 50% refund or the option to reschedule. In case of bad weather, we will either reschedule your tour or provide a full refund.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Booking Section -->
+  <section id="Book-Now" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Book Your Snorkeling Adventure</h2>
+      <p class="section-subtitle">Reserve your spot for an unforgettable underwater experience</p>
+      
+      <div class="booking-form-container">
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="package">Select Package</label>
+              <select id="package" name="package" required>
+                <option value="">Choose a package</option>
+                <option value="Basic Package - $45/person">Basic Package - $45/person</option>
+                <option value="Premium Package - $75/person">Premium Package - $75/person</option>
+                <option value="Private Tour - $120/person">Private Tour - $120/person</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="participants">Number of Participants</label>
+              <input type="number" id="participants" name="participants" min="1" max="20" value="1" required>
+            </div>
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="message">Special Requests</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any dietary restrictions, accessibility needs, or special requests..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn-send">
+            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+          </button>
+        </form>
+        
+        <div class="booking-info">
+          <h3>Why Book With Us?</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Certified professional guides</li>
+            <li><i class="fas fa-check-circle"></i> Top-quality equipment</li>
+            <li><i class="fas fa-check-circle"></i> Small group sizes</li>
+            <li><i class="fas fa-check-circle"></i> Environmental awareness</li>
+            <li><i class="fas fa-check-circle"></i> Safety first approach</li>
+            <li><i class="fas fa-check-circle"></i> 5-star rated experiences</li>
+          </ul>
+          
+          <div class="contact-info">
+            <h4>Need Help?</h4>
+            <p>Contact our customer service team</p>
+            <p><i class="fas fa-phone"></i> +62 85-338-660-399</p>
+            <p><i class="fas fa-envelope"></i> rizky@giliocean.com</p>
+            <p><i class="fas fa-clock"></i> Available 7:00 AM - 12:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3><i class="bi bi-tsunami"></i> Gili Ocean</h3>
+          <p>Discover the underwater wonders of Gili Islands with our professional snorkeling tours. We're committed to providing unforgettable experiences while preserving marine ecosystems for future generations.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#Home"><i class="bi bi-house"></i> Home</a></li>
+            <li><a href="#package"><i class="bi bi-calendar-check"></i> Packages</a></li>
+            <li><a href="#photo-gallery"><i class="bi bi-images"></i> Photo Gallery</a></li>
+            <li><a href="#Location"><i class="bi bi-geo-alt"></i> Location</a></li>
+            <li><a href="#Faq"><i class="bi bi-question-circle"></i> FAQ</a></li>
+            <li><a href="#Book-Now"><i class="bi bi-bookmark-check"></i> Book Now</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Gili Air, Lombok, Indonesia</li>
+            <li><i class="fas fa-phone"></i> +62 85-338-660-399</li>
+            <li><i class="fas fa-envelope"></i> rizky@giliocean.com</li>
+            <li><i class="fas fa-clock"></i> Daily: 7:00 AM - 12:00 PM</li>
+            <li><i class="fas fa-globe"></i> www.giliocean.com</li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get special offers, updates, and snorkeling tips</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="payment-methods" style="margin-top: 20px;">
+            <p style="margin-bottom: 10px; font-size: 0.9rem;">We Accept:</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <i class="fab fa-cc-visa" style="font-size: 1.5rem; color: rgba(255,255,255,0.7);"></i>
+              <i class="fab fa-cc-mastercard" style="font-size: 1.5rem; color: rgba(255,255,255,0.7);"></i>
+              <i class="fab fa-cc-paypal" style="font-size: 1.5rem; color: rgba(255,255,255,0.7);"></i>
+              <i class="fab fa-cc-apple-pay" style="font-size: 1.5rem; color: rgba(255,255,255,0.7);"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gili Ocean Snorkeling. All rights reserved. | <a href="#" style="color: var(--accent);">Privacy Policy</a> | <a href="#" style="color: var(--accent);">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
